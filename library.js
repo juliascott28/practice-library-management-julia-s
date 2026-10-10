@@ -6,9 +6,9 @@ class LibraryItem {
         this.isAvailable = isAvailable
     }
     checkOut(){
-        console.log(`\nYou are checking out item:
+            console.log(`\nYou are checking out item:
         ${this.title}`)
-    }
+    } 
     returnItem(){
         console.log(`\nYou are returning your item:
             ${this.title}`)
@@ -49,3 +49,7 @@ greatGatsby.returnItem()
 let carsMovie = new DVD('Cars', '343.56', false, 'Anderson', '116 minutes')
 console.log(carsMovie)
 carsMovie.returnItem()
+
+let natGeo = new Magazine('National Geographic', '347.431', true, 'volume 45', 'National Geographic Partners')
+console.log(natGeo)
+natGeo.checkOut()
